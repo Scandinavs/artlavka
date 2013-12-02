@@ -44,16 +44,41 @@
                         <div class="formField"><input value="" name="email" type="text"></div>
                     </div>
                     <div style="width: 100%;">
-                        <a class="button" name="discountOrder" style="width: 155px; float: right; margin-right: 7px" href="#inline">Купить сейчас!</a>
+                        <a class="button" name="discountOrder" style="width: 155px; float: right; margin-right: 7px"
+                           href="#inline">Купить сейчас!</a>
                     </div>
                 </div>
             </div>
         </div>
         <div style="clear:both"></div>
         <!--end discount -->
+        <div class="horizontalLine" style="margin-top: -10px;"></div>
 
-        <div id="info"></div>
+        <div id="info">
+            <div class="infoBlock" style="width: 280px">
+                <h2>Доставка по<br/>всей Украине</h2>
+                <div class="infoDescription">
+                    <ul>
+                        <li><strong>Оформить</strong> заказ можно на сайте или по телефону</li>
+                        <li>Доставка <strong>по всей </strong>территории <strong>Украины </strong>осуществляется Новой
+                            Почтой
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="verticalDashedLine"></div>
+            <div class="infoBlock" style="width: 325px">
+                <h2>Индивидуальный<br/>подход к каждому</h2>
+
+            </div>
+            <div class="verticalDashedLine"></div>
+            <div class="infoBlock">
+                <h2 style="margin-left: 20px">При заказе трёх<br/>подарков - скидка 10%!</h2>
+            </div>
+        </div>
         <!--end info -->
+        <div class="horizontalLine" style="margin-top: 10px;"></div>
+
         <div id="content">
             <h2>Lorem ipsum, Dolor sit</h2>
 
