@@ -12,23 +12,10 @@
 <body>
 <div id="main">
     <div class="container">
-        <div id="header">
-            <div id="logo">
-                <h1>Logo</h1>
-            </div>
-            <div id="tagline">
-                <h1>Подарки из бумаги и конфет</h1>
-            </div>
-            <div id="contact">
-                <div id="phone"><p>+38(068)157-91-18</p></div>
-                <div id="email">candybouquet@mail.ru</div>
-                <div id="contactMeBlock">
-                    <a id="contactMeButton" name="reverseCall" href="#inline">Заказать обратный звонок</a>
-                </div>
-            </div>
-        </div>
+
+        <?php include 'header.html'; ?>
         <div style="clear:both"></div>
-        <!--end header -->
+
         <div id="discount"></div>
         <!--end discount -->
         <div id="info"></div>
