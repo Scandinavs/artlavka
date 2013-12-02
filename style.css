@@ -1,0 +1,93 @@
+body, div, h1, h2, h3, h4, h5, h6, p, ul, img {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Georgia, serif;
+}
+
+h1 {
+    font: italic bold 30px Georgia, serif;
+    text-align: left;
+    text-decoration: none;
+    color: #ffffff;
+    line-height: normal;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#header {
+    height: 110px;
+    background: transparent url(images/header.png) no-repeat scroll center top;
+    width: 960px;
+    padding-top: 10px;
+}
+
+#main {
+    background: transparent url(images/delicious_bcgr.jpg) no-repeat scroll center top;
+}
+
+#logo {
+    background: url(images/delicious_logo_2.png) no-repeat;
+    margin-left: 35px;
+    width: 55px;
+    height: 60px;
+    float: left;
+}
+
+#logo h1 {
+    text-indent: -9999px;
+}
+
+#tagline {
+    margin-left: 10px;
+    margin-top: 30px;
+    float: left;
+}
+
+#contact {
+    float: right;
+    margin-right: 20px;
+}
+
+#phone {
+    font: italic bold 30px Georgia, serif;
+    text-align: left;
+    text-decoration: none;
+    color: #ffffff;
+    line-height: normal;
+}
+
+#email {
+    font: italic 15px Georgia, serif;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    line-height: normal;
+}
+
+#contactMeButton {
+    float: right;
+    padding-top: 5px;
+    margin-right: 20px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    width: 244px;
+    height: 25px;
+    min-width: 244px;
+    min-height: 25px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    color: #333333;
+    font-style: italic;
+    font-weight: bold;
+    background: #f7eea6 none repeat scroll left top;
+}
