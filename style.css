@@ -20,6 +20,38 @@ h1 {
     margin: 0 auto;
 }
 
+.discountItem {
+    position: relative;
+    float: left
+}
+
+.discountItem:after {
+    background-image: url(images/candy_121x121.png);
+    width: 121px;
+    height: 121px;
+    display: block;
+    content: ' ';
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.smallDiscountItem {
+    position: relative;
+    float: left
+}
+
+.smallDiscountItem:after {
+    background-image: url(images/candy_60x52.png);
+    width: 60px;
+    height: 52px;
+    display: block;
+    content: ' ';
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
 #header {
     height: 110px;
     background: transparent url(images/header.png) no-repeat scroll center top;
@@ -90,4 +122,8 @@ h1 {
     font-style: italic;
     font-weight: bold;
     background: #f7eea6 none repeat scroll left top;
+}
+
+#orderDiscountItemForm {
+    float: left;
 }

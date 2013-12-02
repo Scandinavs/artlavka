@@ -1,8 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+﻿<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<html lang="ru">
 <head>
     <title>Подарки из бумаги и конфет</title>
 
@@ -15,9 +13,19 @@
 
         <?php include 'header.html'; ?>
         <div style="clear:both"></div>
+        <!--end header -->
+        
+        <div id="discount">
+            <div class="discountItem">
+                <img src="images/items/discount_item_2.png" width="490" height="320"/>
+            </div>
+            <div id="orderDiscountItemForm">
 
-        <div id="discount"></div>
+            </div>
+        </div>
+        <div style="clear:both"></div>
         <!--end discount -->
+
         <div id="info"></div>
         <!--end info -->
         <div id="content">
@@ -58,7 +66,7 @@
 </div>
 <div id="footer">
     <div class="container">
-        <p>Copyright © 2009 MySite <br/>
+        <p>Copyright © 2013 ArtLavka <br/>
             All Rights Reserved</p>
     </div>
 </div>
