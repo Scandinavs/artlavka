@@ -4,7 +4,9 @@
 <head>
     <title>Подарки из бумаги и конфет</title>
 
-    <link href="style.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="style/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="style/style.css" rel="stylesheet" type="text/css" media="screen"/>
+    <script src="js/jquery-1.10.2.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -14,13 +16,37 @@
         <?php include 'header.html'; ?>
         <div style="clear:both"></div>
         <!--end header -->
-        
-        <div id="discount">
-            <div class="discountItem">
-                <img src="images/items/discount_item_2.png" width="490" height="320"/>
-            </div>
-            <div id="orderDiscountItemForm">
 
+        <div id="discount">
+            <div>
+                <div class="discountItem">
+                    <div class="percentDiscount30">
+                        <img src="style/images/items/discount_item_2.png" width="490" height="320"/>
+                    </div>
+                </div>
+                <div id="discountTitle"><h2>Скидка до 10 декабря!</h2></div>
+            </div>
+            <div id="orderDiscountItemForm" style="float: left">
+                <div id="orderDiscountItemTitle">
+                    <h2>Изысканность цветов и вкус<br/>шоколада в одном подарке!</h2>
+                </div>
+                <div id="discountForm">
+                    <div class="formRow">
+                        <div class="formLabel"><span>Ваше имя</span></div>
+                        <div class="formField"><input value="" name="name" type="text"></div>
+                    </div>
+                    <div class="formRow">
+                        <div class="formLabel"><span>Ваш телефон</span></div>
+                        <div class="formField"><input value="" name="phone" type="text"></div>
+                    </div>
+                    <div class="formRow">
+                        <div class="formLabel"><span>Эл. почта</span></div>
+                        <div class="formField"><input value="" name="email" type="text"></div>
+                    </div>
+                    <div style="width: 100%;">
+                        <a class="button" name="discountOrder" style="width: 155px; float: right; margin-right: 7px" href="#inline">Купить сейчас!</a>
+                    </div>
+                </div>
             </div>
         </div>
         <div style="clear:both"></div>

@@ -15,9 +15,33 @@ h1 {
     line-height: normal;
 }
 
+h2 {
+    font: italic bold 25px Georgia, serif;
+    text-align: left;
+    text-decoration: none;
+    color: #e32434;
+    line-height: normal;
+}
+
 .container {
     width: 960px;
     margin: 0 auto;
+}
+
+.percentDiscount30 {
+    position: relative;
+    float: left
+}
+
+.percentDiscount30:after {
+    background-image: url(images/percent_discount_160x150.png);
+    width: 160px;
+    height: 146px;
+    display: block;
+    content: ' ';
+    position: absolute;
+    top: -10px;
+    left: 5px;
 }
 
 .discountItem {
@@ -52,11 +76,54 @@ h1 {
     right: 0px;
 }
 
+.formRow {
+    height: 35px;
+    padding-left: 4px;
+    padding-top: 20px;
+}
+
+.formLabel {
+    width: 120px;
+    text-align: left;
+    color: #737373;
+    font-size: 18px;
+    float: left;
+    height: 100%;
+    padding-top: 5px;
+}
+
+.formField {
+    float: left;
+}
+
+.formField input {
+    width: 305px;
+}
+
+.button {
+    padding-top: 5px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    height: 25px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12pt;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    color: #333333;
+    font-style: italic;
+    font-weight: bold;
+    background: #f7eea6 none repeat scroll left top;
+}
+
 #header {
-    height: 110px;
+    height: 100px;
     background: transparent url(images/header.png) no-repeat scroll center top;
     width: 960px;
     padding-top: 10px;
+    padding-bottom: 0;
+    margin: 0;
 }
 
 #main {
@@ -102,28 +169,37 @@ h1 {
     line-height: normal;
 }
 
-#contactMeButton {
+#reverseCall {
     float: right;
-    padding-top: 5px;
-    margin-right: 20px;
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
     width: 244px;
-    height: 25px;
-    min-width: 244px;
-    min-height: 25px;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    border: 1px solid #cccccc;
-    border-radius: 6px;
-    color: #333333;
-    font-style: italic;
-    font-weight: bold;
-    background: #f7eea6 none repeat scroll left top;
+    margin-right: 20px;
 }
 
 #orderDiscountItemForm {
     float: left;
+}
+
+#discountTitle {
+    float: left;
+    margin-left: -320px;
+    margin-top: 15px;
+}
+
+#orderDiscountItemTitle h2 {
+    font-weight: normal;
+    font-size: 30px;
+    color: #D84436;
+    margin-left: 20px;
+}
+
+#discountForm {
+    background-color: #e9ebd9;
+    border: 5px solid #fa6023;
+    opacity: 0.95;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    width: 450px;
+    height: 210px;
+    margin-top: 10px;
 }
