@@ -243,8 +243,17 @@ h2 {
     background: #fff94c none repeat scroll left top;
 }
 
-input.error, textarea.error { border-color: #973d3d; border-style: solid; background: #f0bebe; color: #a35959; }
-input.error:focus, textarea.error:focus { border-color: #973d3d; color: #a35959; }
+input.error, textarea.error {
+    border-color: #973d3d;
+    border-style: solid;
+    background: #f0bebe;
+    color: #a35959;
+}
+
+input.error:focus, textarea.error:focus {
+    border-color: #973d3d;
+    color: #a35959;
+}
 
 #header {
     height: 100px;
@@ -319,6 +328,29 @@ input.error:focus, textarea.error:focus { border-color: #973d3d; color: #a35959;
     font-size: 30px;
     color: #D84436;
     margin-left: 20px;
+}
+
+#successOrderBlock {
+    background: #b9ff99;
+    border: 0px none #C0C0C0;
+    opacity: 0.95;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    width: 830px;
+    height: 67px;
+}
+
+#successOrderBlock p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+}
+
+#successOrderBlockLink {
+    color: rgb(0, 136, 204);
+    text-decoration: none;
 }
 
 #discountForm {

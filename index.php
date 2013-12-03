@@ -4,6 +4,7 @@
 <head>
     <title>Подарки из бумаги и конфет</title>
 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="icon" type="image/png" href="favicon.ico">
 
     <link href="style/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
