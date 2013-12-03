@@ -169,6 +169,7 @@ h2 {
 .goodsBackground {
     float: left;
     width: 100%;
+    padding-bottom: 25px;
     background: #ffe992;
     border: 0px solid #000000;
     opacity: 1;
@@ -181,7 +182,7 @@ h2 {
     float: left;
     text-align: left;
     width: 430px;
-    padding-left: 50px;
+    padding-left: 40px;
 }
 
 .itemTitle {
@@ -392,4 +393,8 @@ input.error:focus, textarea.error:focus { border-color: #973d3d; color: #a35959;
     font-style: italic;
     font-weight: bold;
     background: #fa6023 none repeat scroll left top;
+}
+
+#footer p {
+    text-align: center;
 }

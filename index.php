@@ -181,7 +181,7 @@ $baseItemsDirSmall = "items/small/";
             $itemDescription = '
             Высота:<b> 50 см</b><br/>
             Диаметр: <b>30 см</b><br/>
-            Количество конфет:<b> 500 г</b><br/>
+            Вес конфет:<b> 500 г</b><br/>
             Тип конфет: <b>Шоколадные в ассортименте</b>';
             $itemPrice = 'Цена: <strong>250 грн</strong>';
             include 'item.html';
@@ -193,10 +193,10 @@ $baseItemsDirSmall = "items/small/";
             $largeItemImage = $baseItemsDir . 'IMG_9619.jpg';
             $itemImage = $baseItemsDirSmall . '9.jpg';
             $itemDescription = '
-            Высота:<b> 50 см</b><br/>
-            Диаметр: <b>30 см</b><br/>
-            Количество конфет:<b> 500 г</b><br/>
-            Тип конфет: <b>Шоколадные в ассортименте</b>';
+            Высота:<b> 25 см</b><br/>
+            Диаметр: <b>-</b><br/>
+            Вес конфет:<b> 150 г</b><br/>
+            Тип конфет: <b>"Amour" Ф-ка "Конти"</b>';
             $itemPrice = 'Цена: <strong>130 грн</strong>';
             include 'item.html';
             ?>
@@ -207,10 +207,10 @@ $baseItemsDirSmall = "items/small/";
             $largeItemImage = $baseItemsDir . 'IMG_9621.jpg';
             $itemImage = $baseItemsDirSmall . '10.jpg';
             $itemDescription = '
-            Высота:<b> 50 см</b><br/>
-            Диаметр: <b>30 см</b><br/>
-            Количество конфет:<b> 500 г</b><br/>
-            Тип конфет: <b>Шоколадные в ассортименте</b>';
+            Высота:<b> 25 см</b><br/>
+            Диаметр: <b>-</b><br/>
+            Вес конфет:<b> 100 г</b><br/>
+            Тип конфет: <b>"Amour" Ф-ка "Конти"</b>';
             $itemPrice = 'Цена: <strong>120 грн</strong>';
             include 'item.html';
             ?>
@@ -221,10 +221,10 @@ $baseItemsDirSmall = "items/small/";
             $largeItemImage = $baseItemsDir . 'IMG_9624.jpg';
             $itemImage = $baseItemsDirSmall . '11.jpg';
             $itemDescription = '
-            Высота:<b> 50 см</b><br/>
-            Диаметр: <b>30 см</b><br/>
-            Количество конфет:<b> 500 г</b><br/>
-            Тип конфет: <b>Шоколадные в ассортименте</b>';
+            Высота:<b> 30 см</b><br/>
+            Диаметр: <b>15 см</b><br/>
+            Вес конфет:<b> 100 г</b><br/>
+            Тип конфет: <b>"Фундук в шоколаде" Ф-ка "Конти"</b>';
             $itemPrice = 'Цена: <strong>120 грн</strong>';
             include 'item.html';
             ?>
@@ -235,10 +235,10 @@ $baseItemsDirSmall = "items/small/";
             $largeItemImage = $baseItemsDir . 'IMG_9602.jpg';
             $itemImage = $baseItemsDirSmall . '20.jpg';
             $itemDescription = '
-            Высота:<b> 50 см</b><br/>
-            Диаметр: <b>30 см</b><br/>
-            Количество конфет:<b> 500 г</b><br/>
-            Тип конфет: <b>Шоколадные в ассортименте</b>';
+            Высота:<b> 30 см</b><br/>
+            Диаметр: <b>10 см</b><br/>
+            Вес конфет:<b>-</b><br/>
+            Тип конфет: <b>-</b>';
             $itemPrice = 'Цена: <strong>80 грн</strong>';
             include 'item.html';
             ?>
@@ -249,10 +249,10 @@ $baseItemsDirSmall = "items/small/";
             $largeItemImage = $baseItemsDir . 'IMG_9584.jpg';
             $itemImage = $baseItemsDirSmall . '2.png';
             $itemDescription = '
-            Высота:<b> 50 см</b><br/>
-            Диаметр: <b>30 см</b><br/>
-            Количество конфет:<b> 500 г</b><br/>
-            Тип конфет: <b>Шоколадные в ассортименте</b>';
+            Высота:<b>-</b><br/>
+            Диаметр: <b>24 см</b><br/>
+            Вес конфет:<b> 250 г</b><br/>
+            Тип конфет: <b>"Батончик"</b>';
             $itemPrice = 'Цена: <strong>80 грн</strong>';
             include 'item.html';
             ?>
@@ -263,10 +263,10 @@ $baseItemsDirSmall = "items/small/";
             $largeItemImage = $baseItemsDir . 'IMG_9597.jpg';
             $itemImage = $baseItemsDirSmall . '19.png';
             $itemDescription = '
-            Высота:<b> 50 см</b><br/>
-            Диаметр: <b>30 см</b><br/>
-            Количество конфет:<b> 500 г</b><br/>
-            Тип конфет: <b>Шоколадные в ассортименте</b>';
+            Высота:<b> 15 см</b><br/>
+            Диаметр: <b>35 см</b><br/>
+            Вес конфет:<b> 500 г</b><br/>
+            Тип конфет: <b>"Konafetto" ф-ка "Roshen"</b>';
             $itemPrice = 'Цена: <strong>120 грн</strong>';
             include 'item.html';
             ?>
@@ -277,10 +277,10 @@ $baseItemsDirSmall = "items/small/";
             $largeItemImage = $baseItemsDir . 'IMG_9634_2.jpg';
             $itemImage = $baseItemsDirSmall . '16.jpg';
             $itemDescription = '
-            Высота:<b> 50 см</b><br/>
+            Высота:<b> 32 см</b><br/>
             Диаметр: <b>30 см</b><br/>
-            Количество конфет:<b> 500 г</b><br/>
-            Тип конфет: <b>Шоколадные в ассортименте</b>';
+            Вес конфет:<b> 400 г</b><br/>
+            Тип конфет: <b>Шоколадные медальки<br/>и конфеты "Basarili" ф-ка "Roshen"</b>';
             $itemPrice = 'Цена: <strong>140 грн</strong>';
             include 'item.html';
             ?>
@@ -291,10 +291,10 @@ $baseItemsDirSmall = "items/small/";
             $largeItemImage = $baseItemsDir . 'IMG_9638.jpg';
             $itemImage = $baseItemsDirSmall . '3.png';
             $itemDescription = '
-            Высота:<b> 50 см</b><br/>
-            Диаметр: <b>30 см</b><br/>
-            Количество конфет:<b> 500 г</b><br/>
-            Тип конфет: <b>Шоколадные в ассортименте</b>';
+            Высота:<b> 35 см</b><br/>
+            Диаметр: <b>25 см</b><br/>
+            Вес конфет:<b> 300 г</b><br/>
+            Тип конфет: <b>"Leonardo"</b>';
             $itemPrice = 'Цена: <strong>120 грн</strong>';
             include 'item.html';
             ?>
@@ -305,10 +305,10 @@ $baseItemsDirSmall = "items/small/";
             $largeItemImage = $baseItemsDir . 'IMG_9591.jpg';
             $itemImage = $baseItemsDirSmall . '4.png';
             $itemDescription = '
-            Высота:<b> 50 см</b><br/>
-            Диаметр: <b>30 см</b><br/>
-            Количество конфет:<b> 500 г</b><br/>
-            Тип конфет: <b>Шоколадные в ассортименте</b>';
+            Высота:<b> 35 см</b><br/>
+            Диаметр: <b>25 см</b><br/>
+            Вес конфет:<b> 300 г</b><br/>
+            Тип конфет: <b>Шоколадные в ассортименте ф-ки "Roshen"</b>';
             $itemPrice = 'Цена: <strong>140 грн</strong>';
             include 'item.html';
             ?>
@@ -319,10 +319,10 @@ $baseItemsDirSmall = "items/small/";
             $largeItemImage = $baseItemsDir . 'IMG_9593.jpg';
             $itemImage = $baseItemsDirSmall . '1.png';
             $itemDescription = '
-            Высота:<b> 50 см</b><br/>
-            Диаметр: <b>30 см</b><br/>
-            Количество конфет:<b> 500 г</b><br/>
-            Тип конфет: <b>Шоколадные в ассортименте</b>';
+            Высота:<b> 30 см</b><br/>
+            Диаметр: <b>25 см</b><br/>
+            Вес конфет:<b> 300 г</b><br/>
+            Тип конфет: <b>"Парижель" ф-ка "АВК"</b>';
             $itemPrice = 'Цена: <strong>120 грн</strong>';
             include 'item.html';
             ?>
@@ -333,10 +333,10 @@ $baseItemsDirSmall = "items/small/";
             $largeItemImage = $baseItemsDir . 'IMG_9603.jpg';
             $itemImage = $baseItemsDirSmall . '21.png';
             $itemDescription = '
-            Высота:<b> 50 см</b><br/>
-            Диаметр: <b>30 см</b><br/>
-            Количество конфет:<b> 500 г</b><br/>
-            Тип конфет: <b>Шоколадные в ассортименте</b>';
+            Высота:<b> 30 см</b><br/>
+            Диаметр: <b>25 см</b><br/>
+            Вес конфет:<b> 300 г</b><br/>
+            Тип конфет: <b>"Трюфель" ф-ка "АВК"</b>';
             $itemPrice = 'Цена: <strong>120 грн</strong>';
             include 'item.html';
             ?>
@@ -347,10 +347,10 @@ $baseItemsDirSmall = "items/small/";
             $largeItemImage = $baseItemsDir . 'IMG_9586.jpg';
             $itemImage = $baseItemsDirSmall . '7.png';
             $itemDescription = '
-            Высота:<b> 50 см</b><br/>
-            Диаметр: <b>30 см</b><br/>
-            Количество конфет:<b> 500 г</b><br/>
-            Тип конфет: <b>Шоколадные в ассортименте</b>';
+            Высота:<b> 20 см</b><br/>
+            Диаметр: <b>25 см</b><br/>
+            Вес конфет:<b> 300 г</b><br/>
+            Тип конфет: <b>"Трюфель" ф-ка "АВК"</b>';
             $itemPrice = 'Цена: <strong>120 грн</strong>';
             include 'item.html';
             ?>
@@ -361,10 +361,10 @@ $baseItemsDirSmall = "items/small/";
             $largeItemImage = $baseItemsDir . 'IMG_9627_2.jpg';
             $itemImage = $baseItemsDirSmall . '13.jpg';
             $itemDescription = '
-            Высота:<b> 50 см</b><br/>
-            Диаметр: <b>30 см</b><br/>
-            Количество конфет:<b> 500 г</b><br/>
-            Тип конфет: <b>Шоколадные в ассортименте</b>';
+            Высота:<b> 30 см</b><br/>
+            Диаметр: <b>25 см</b><br/>
+            Вес конфет:<b> 300 г</b><br/>
+            Тип конфет: <b>"Трюфель" ф-ка "АВК"</b>';
             $itemPrice = 'Цена: <strong>120 грн</strong>';
             include 'item.html';
             ?>
@@ -375,10 +375,10 @@ $baseItemsDirSmall = "items/small/";
             $largeItemImage = $baseItemsDir . 'IMG_9630.jpg';
             $itemImage = $baseItemsDirSmall . '25.jpg';
             $itemDescription = '
-            Высота:<b> 50 см</b><br/>
-            Диаметр: <b>30 см</b><br/>
-            Количество конфет:<b> 500 г</b><br/>
-            Тип конфет: <b>Шоколадные в ассортименте</b>';
+            Высота:<b> 20 см</b><br/>
+            Диаметр: <b>15 см</b><br/>
+            Вес конфет:<b> 150 г</b><br/>
+            Тип конфет: <b>"Amour" ф-ка "Конти"</b>';
             $itemPrice = 'Цена: <strong>120 грн</strong>';
             include 'item.html';
             ?>
