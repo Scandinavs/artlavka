@@ -23,6 +23,40 @@ $baseItemsDir = "items/";
 $baseItemsDirSmall = "items/small/";
 ?>
 <script type="text/javascript">
+    function buyDiscountItem() {
+        var emailval = $("#buyDiscountItemEmail").val();
+        var telVal = $("#buyDiscountItemPhone").val();
+        var nameVal = $("#buyDiscountItemName").val();
+
+        if (telVal.length == 0) {
+            $("#buyDiscountItemPhone").addClass("error");
+        } else {
+            $("#buyDiscountItemPhone").removeClass("error");
+        }
+
+        if (nameVal.length == 0) {
+            $("#buyDiscountItemName").addClass("error");
+        } else {
+            $("#buyDiscountItemName").removeClass("error");
+        }
+
+        if (telVal.length > 0 && nameVal.length > 0) {
+            $.ajax({
+                type: 'POST',
+                url: 'buyDiscountItem.php',
+                data: $("#buyDiscountItemForm").serialize(),
+                success: function (data) {
+                    if (data == "true") {
+                        window.open("http://artlavka.pp.ua/success.html", "_self");
+                    }
+                },
+                error: function () {
+                    alert('Невозможно отправить запрос! Попробуйте позже или позвоните нам!');
+                }
+            });
+        }
+    }
+
     $(document).ready(function () {
         $('.fancybox').fancybox({
             helpers: {
@@ -50,6 +84,16 @@ $baseItemsDirSmall = "items/small/";
         });
         $("#sendButton").on("click", function () {
             sendRequest();
+        });
+
+        $("#buyDiscountItem").keydown(function (event) {
+            if (event.which == 13) {
+                buyDiscountItem();
+            }
+        });
+
+        $("#buyDiscountItem").on("click", function () {
+            buyDiscountItem();
         });
 
         $("#reverseCall").on("click", function () {
@@ -101,21 +145,22 @@ $baseItemsDirSmall = "items/small/";
                     <h2>Изысканность цветов и вкус<br/>шоколада в одном подарке!</h2>
                 </div>
                 <div id="discountForm">
+                <form id="buyDiscountItemForm" name="buyDiscountItemForm" action="#" method="post">
                     <div class="formRow">
                         <div class="formLabel"><span>Ваше имя</span></div>
-                        <div class="formField"><input value="" name="name" type="text"></div>
+                        <div class="formField"><input id="buyDiscountItemName" value="" name="buyDiscountItemName" type="text"></div>
                     </div>
                     <div class="formRow">
                         <div class="formLabel"><span>Ваш телефон</span></div>
-                        <div class="formField"><input value="" name="phone" type="text"></div>
+                        <div class="formField"><input id="buyDiscountItemPhone" value="" name="buyDiscountItemPhone" type="text"></div>
                     </div>
                     <div class="formRow">
                         <div class="formLabel"><span>Эл. почта</span></div>
-                        <div class="formField"><input value="" name="email" type="text"></div>
+                        <div class="formField"><input id="buyDiscountItemEmail" value="" name="buyDiscountItemEmail" type="text"></div>
                     </div>
                     <div style="width: 100%;">
-                        <a class="button" name="discountOrder" style="width: 155px; float: right; margin-right: 7px"
-                           href="#inline">Купить сейчас!</a>
+                        <a id="buyDiscountItem" class="button" name="discountOrder" style="width: 155px; float: right; margin-right: 7px" href="#">Купить сейчас!</a>
+                </form>
                     </div>
                 </div>
             </div>
@@ -408,13 +453,6 @@ include 'tracking.html';
         var nameVal = $("#orderFormName").val();
         var mailvalid = validateEmail(emailval);
 
-        if (mailvalid == false) {
-            $("#orderFormEmail").addClass("error");
-        }
-        else if (mailvalid == true) {
-            $("#orderFormEmail").removeClass("error");
-        }
-
         if (telVal.length == 0) {
             $("#orderFormPhone").addClass("error");
         } else {
@@ -427,14 +465,14 @@ include 'tracking.html';
             $("#orderFormName").removeClass("error");
         }
 
-        if (mailvalid == true && telVal.length > 0 && telVal.length > 0) {
+        if (telVal.length > 0 && nameVal.length > 0) {
 
             $("#sendButton").replaceWith("<em>Обработка запроса...</em>");
 
             $.ajax({
                 type: 'POST',
                 url: 'sendmessage.php',
-                data: $("#contact").serialize(),
+                data: $("#orderForm").serialize(),
                 success: function (data) {
                     if (data == "true") {
                         window.open("http://artlavka.pp.ua/success.html", "_self");
