@@ -117,6 +117,109 @@ h2 {
     background: #f7eea6 none repeat scroll left top;
 }
 
+.horizontalLine {
+    font-size: 1px;
+    overflow: hidden;
+    float: left;
+    line-height: 1px;
+    width: 100%;
+    padding: 0;
+    background: transparent;
+    margin: 1px 0 0 0;
+    height: 1px;
+    border-top: 1px solid #ffe992;
+}
+
+.verticalDashedLine {
+    font-size: 1px;
+    overflow: hidden;
+    line-height: 1px;
+    padding: 0;
+    background: transparent;
+    float: left;
+    width: 1px;
+    border-left: 3px dashed #f59403;
+    margin: 5px 0 5px 0;
+    height: 95%;
+}
+
+.infoBlock {
+    float: left;
+    margin-top: 15px;
+}
+
+.infoBlock h2 {
+    float: none;
+    margin-left: 40px;
+    color: #D84436;
+}
+
+.infoBlock li {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+}
+
+.infoDescription {
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.goodsBackground {
+    float: left;
+    width: 100%;
+    background: #ffe992;
+    border: 0px solid #000000;
+    opacity: 1;
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+}
+
+.item {
+    float: left;
+    text-align: left;
+    width: 430px;
+    padding-left: 50px;
+}
+
+.itemTitle {
+    font: normal normal 24px Georgia, serif;
+    vertical-align: middle;
+    height: 65px;
+    line-height: 60px;
+    text-align: center;
+    text-decoration: none;
+    font-style: italic;
+    color: #d84436;
+    padding: 0px 0px 0px 0px;
+}
+
+.itemTitle span {
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    padding-left: 20px;
+}
+
+.itemImg {
+    float: left;
+    padding-left: 25px;
+}
+
+.itemDescription {
+    /*float: left;*/
+    padding-left: 230px;
+    line-height: 130%;
+}
+
+.itemPrice {
+    /*float: left;*/
+    padding-left: 230px;
+}
+
 #header {
     height: 100px;
     background: transparent url(images/header.png) no-repeat scroll center top;
@@ -213,63 +316,4 @@ h2 {
     -webkit-border-radius: 5px 5px 5px 5px;
     height: 220px;
     width: 100%;
-}
-
-.horizontalLine {
-    font-size: 1px;
-    overflow: hidden;
-    float: left;
-    line-height: 1px;
-    width: 100%;
-    padding: 0;
-    background: transparent;
-    margin: 1px 0 0 0;
-    height: 1px;
-    border-top: 1px solid #ffe992;
-}
-
-.verticalDashedLine {
-    font-size: 1px;
-    overflow: hidden;
-    line-height: 1px;
-    padding: 0;
-    background: transparent;
-    float: left;
-    width: 1px;
-    border-left: 3px dashed #f59403;
-    margin: 5px 0 5px 0;
-    height: 95%;
-}
-
-.infoBlock {
-    float: left;
-    margin-top: 15px;
-}
-
-.infoBlock h2 {
-    float: none;
-    margin-left: 40px;
-    color: #D84436;
-}
-
-.infoBlock li {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-    color: #333333;
-}
-
-.infoDescription {
-    padding-left: 20px;
-    margin-top: 20px;
-}
-
-.goodsBackground {
-    float: left;
-    background: #ffe992;
-    border: 0px solid #000000;
-    opacity: 1;
-    border-radius: 0px 0px 0px 0px;
-    -moz-border-radius: 0px 0px 0px 0px;
-    -webkit-border-radius: 0px 0px 0px 0px;
 }

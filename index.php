@@ -6,10 +6,40 @@
 
     <link href="style/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
     <link href="style/style.css" rel="stylesheet" type="text/css" media="screen"/>
+    <!-- bxSlider CSS file -->
+    <link href="js/bxslider/jquery.bxslider.css" rel="stylesheet"/>
+    <!-- bxSlider Javascript file -->
+    <script src="js/bxslider/jquery.bxslider.min.js"></script>
+    <script src="/js/rainbow.min.js"></script>
     <script src="js/jquery-1.10.2.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css" type="text/css" media="screen"/>
+    <script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js"></script>
+    <!--    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>-->
 </head>
 
 <body>
+<?php
+$baseItemsDir = "items/";
+?>
+<script type="text/javascript">
+    $(document).ready(function () {
+//        $('.bxslider').bxSlider();
+        $('.fancybox').fancybox({
+            helpers: {
+                title: {
+                    type: 'inside'
+                }
+            }
+        });
+        $('.bxslider').bxSlider({
+            mode: 'horizontal',
+            responsive: false,
+            controls: false
+        });
+    });
+
+</script>
+
 <div id="main">
     <div class="container">
 
@@ -21,7 +51,7 @@
             <div>
                 <div class="discountItem">
                     <div class="percentDiscount30">
-                        <img src="style/images/items/discount_item_2.png" width="490" height="320"/>
+                        <img src="items/discount_item_2.png" width="490" height="320"/>
                     </div>
                 </div>
                 <div id="discountTitle"><h2>Скидка до 10 декабря!</h2></div>
@@ -57,10 +87,12 @@
         <div id="info">
             <div class="infoBlock" style="width: 280px">
                 <h2>Доставка по<br/>всей Украине</h2>
+
                 <div class="infoDescription">
                     <ul>
                         <li><strong>Оформить</strong> заказ можно на сайте или по телефону</li>
-                        <li>Доставка <strong>по всей </strong>территории <strong>Украины </strong>осуществляется Новой Почтой
+                        <li>Доставка <strong>по всей </strong>территории <strong>Украины </strong>осуществляется Новой
+                            Почтой
                         </li>
                     </ul>
                 </div>
@@ -68,18 +100,27 @@
             <div class="verticalDashedLine"></div>
             <div class="infoBlock" style="width: 325px">
                 <h2>Индивидуальный<br/>подход к каждому</h2>
+
                 <div class="infoDescription">
-                    <ul><li>Вы можете <strong>выбрать </strong>цветовое решение, марку конфет и форму подарка в соответствии с поводом</li>
-                        <li>Заказ выполняется в <strong>кратчайшие </strong>сроки и из самых <strong>качественных </strong>материалов</li>
+                    <ul>
+                        <li>Вы можете <strong>выбрать </strong>цветовое решение, марку конфет и форму подарка в
+                            соответствии с поводом
+                        </li>
+                        <li>Заказ выполняется в <strong>кратчайшие </strong>сроки и из самых
+                            <strong>качественных </strong>материалов
+                        </li>
                     </ul>
                 </div>
             </div>
             <div class="verticalDashedLine"></div>
             <div class="infoBlock" style="width: 335px">
                 <h2 style="margin-left: 20px;">При заказе трёх<br/>подарков - скидка 10%!</h2>
+
                 <div class="infoDescription">
-                    <ul><li>При <strong>любом </strong>повторном заказе - <strong>скидка 5%</strong> на все изделия</li>
-                        <li>При повторном заказе в течение&nbsp; недели <strong>скидка 20%</strong> на всю продукцию</li>
+                    <ul>
+                        <li>При <strong>любом </strong>повторном заказе - <strong>скидка 5%</strong> на все изделия</li>
+                        <li>При повторном заказе в течение&nbsp; недели <strong>скидка 20%</strong> на всю продукцию
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -88,42 +129,37 @@
         <div class="horizontalLine" style="margin-top: 10px;"></div>
 
         <div class="goodsBackground">
+            <?php
+            $itemTitle = 'Торт<br/>"Розовый каприз"';
+            $fancyBoxItemTitle = "Торт 'Розовый каприз'";
+            $largeItemImage = $baseItemsDir . 'Tort_Rozoviy_Kapriz_190x253.png';
+            $itemImage = $baseItemsDir . 'Tort_Rozoviy_Kapriz_190x253.png';
+            //            $itemImages = array(
+            //                'Торт "Розовый каприз"' => $baseItemsDir . 'Tort_Rozoviy_Kapriz_190x253.png',
+            //                'Торт "Розовый каприз" 2' => $baseItemsDir . 'Tort_Rozoviy_Kapriz_190x253.png',
+            //            );
+            $itemDescription = 'Конфеты: "Канафета" 500г';
+            $itemPrice = 'Цена: <strong>125 грн</strong>';
+            include 'item.html';
+            ?>
+            <?php
+            $itemTitle = 'Торт<br/>"Радость олигарха"';
+            $fancyBoxItemTitle = "Торт 'Розовый каприз'";
+            $largeItemImage = $baseItemsDir . 'Tort_Rozoviy_Kapriz_190x253.png';
+            $itemImage = $baseItemsDir . 'Tort_Radost_Oligarha_190x253.png';
+            $itemDescription = 'Description';
+            $itemPrice = '125 uah';
+            include 'item.html';
+            ?>
+            <?php
+            $itemTitle = 'Торт<br/>"Радость олигарха"';
+            $fancyBoxItemTitle = "Торт 'Розовый каприз'";
+            $itemImage = $baseItemsDir . 'Tort_Radost_Oligarha_190x253.png';
+            $itemDescription = 'Description';
+            $itemPrice = '125 uah';
+            include 'item.html';
+            ?>
         </div>
-
-        <div id="content">
-            <h2>Lorem ipsum, Dolor sit</h2>
-
-            <h3>Nullam vulputate felis id odio interdum nec malesuada mi pretium. </h3>
-
-            <p>Praesent luctus egestas nisl, vitae vehicula eros rhoncus vel.
-                Phasellus consequat arcu eu neque convallis eu vulputate diam vehicula. In eget venenatis nisl.
-                Vestibulum id nulla eu sapien pellentesque malesuada pharetra ac lacus.
-                Curabitur et ultricies quam. Aenean pretium aliquet velit, gravida vulputate urna tempus vel. </p>
-
-            <p>Proin tempor erat sit amet nisl porta nec vulputate arcu imperdiet. Praesent luctus egestas nisl, vitae
-                vehicula eros rhoncus vel.
-                Phasellus consequat arcu eu neque convallis eu vulputate diam vehicula. In eget venenatis nisl.
-                Vestibulum id nulla eu sapien pellentesque malesuada pharetra ac lacus. Curabitur et ultricies quam.
-                Aenean pretium aliquet velit,
-                gravida vulputate urna tempus vel. Proin tempor erat sit amet nisl porta nec vulputate arcu
-                imperdiet. </p>
-
-            <div id="news">
-                <h3>Latest Updates</h3>
-                <h4>Vestibulum id nulla eu sapien pellentesque</h4>
-                <small>June 1, 2009</small>
-                <p>Ut vel turpis a orci pulvinar tincidunt. Mauris id purus turpis. Aliquam metus arcu,
-                    facilisis quis pellentesque vitae, dapibus non nulla. Nulla suscipit sagittis sodales.
-                    Etiam laoreet ante in purus laoreet id malesuada dui pretium.<a href="#"> Read More</a></p>
-                <h4>Vestibulum id nulla eu sapien pellentesque</h4>
-                <small>June 1, 2009</small>
-                <p>Ut vel turpis a orci pulvinar tincidunt. Mauris id purus turpis. Aliquam metus arcu,
-                    facilisis quis pellentesque vitae, dapibus non nulla. Nulla suscipit sagittis sodales.
-                    Etiam laoreet ante in purus laoreet id malesuada dui pretium.<a href="#"> Read More</a></p>
-            </div>
-            <!--end news-->
-        </div>
-        <!--end content-->
     </div>
 </div>
 <div id="footer">
@@ -133,5 +169,8 @@
     </div>
 </div>
 <!--end footer-->
+<?php
+include 'tracking.html';
+?>
 </body>
 </html>

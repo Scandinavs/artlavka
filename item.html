@@ -1,0 +1,25 @@
+<div class="item">
+    <div class="itemTitle">
+        <span><?php echo $itemTitle; ?></span>
+    </div>
+    <div class="itemImg">
+        <!--<ul class="bxslider" style="max-width: 180px">-->
+            <!--<?php foreach($itemImages as $itemImageAlt=>$itemImage): ?>-->
+            <!--<img src="<?php echo $itemImage; ?>" alt="<?php echo $itemImageAlt; ?>"/>-->
+            <!--<?php endforeach; ?>-->
+        <!--</ul>-->
+        <a class="fancybox" href="<?php echo $largeItemImage; ?>" title="<?php echo $fancyBoxItemTitle; ?>">
+            <img src="<?php echo $itemImage; ?>" alt=""/>
+        </a>
+    </div>
+    <div>
+        <div class="itemDescription">
+            <strong>Описание товара</strong>
+            <?php echo $itemDescription; ?>
+        </div>
+        <!--<div style="clear:both"></div>-->
+        <div class="itemPrice">
+            <?php echo $itemPrice; ?>
+        </div>
+    </div>
+</div>
