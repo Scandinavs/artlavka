@@ -20,6 +20,7 @@
 <body>
 <?php
 $baseItemsDir = "items/";
+$baseItemsDirSmall = "items/small/";
 ?>
 <script type="text/javascript">
     $(document).ready(function () {
@@ -37,24 +38,42 @@ $baseItemsDir = "items/";
 //            controls: false
 //        });
 
-        $("#orderForm").submit(function() {
+        $("#orderForm").submit(function () {
             return false;
         });
 
-        $("#sendButton").keydown(function(event) {
-
-            if(event.which == 13) {
+        $("#sendButton").keydown(function (event) {
+            if (event.which == 13) {
                 sendRequest();
-                window.open("http://artlavka.pp.ua/5","_self");
+                window.open("http://artlavka.pp.ua/5", "_self");
             }
         });
-        $("#sendButton").on("click", function(){
+        $("#sendButton").on("click", function () {
             sendRequest();
         });
 
-        $(".buyButton").on("click", function(){
+        $("#reverseCall").on("click", function () {
             var productName = $(this).attr('name');
             $('#productName').attr('value', productName);
+
+            $('#inlineOrderForm').css('height', '150px');
+
+            $('#emailLabel').hide();
+            $('#orderFormEmail').hide();
+            $('#msgLabel').hide();
+            $('#orderFormMsg').hide();
+            $('#orderFormTitle').text("Заказ обратного звонка");
+        });
+
+        $(".buyButton").on("click", function () {
+            var productName = $(this).attr('name');
+            $('#productName').attr('value', productName);
+
+            $('#emailLabel').show();
+            $('#orderFormEmail').show();
+            $('#msgLabel').show();
+            $('#orderFormMsg').show();
+            $('#orderFormTitle').text("Оформление заказа");
         });
 
     });
@@ -151,33 +170,216 @@ $baseItemsDir = "items/";
 
         <div class="goodsBackground">
             <?php
-            $itemTitle = 'Торт<br/>"Розовый каприз"';
-            $fancyBoxItemTitle = "Торт 'Розовый каприз'";
-            $largeItemImage = $baseItemsDir . 'Tort_Rozoviy_Kapriz_190x253.png';
-            $itemImage = $baseItemsDir . 'Tort_Rozoviy_Kapriz_190x253.png';
+            $itemTitle = 'Ёлочка';
+            $fancyBoxItemTitle = "Ёлочка";
+            $largeItemImage = $baseItemsDir . 'IMG_9617.jpg';
+            $itemImage = $baseItemsDirSmall . '8.jpg';
             //            $itemImages = array(
             //                'Торт "Розовый каприз"' => $baseItemsDir . 'Tort_Rozoviy_Kapriz_190x253.png',
             //                'Торт "Розовый каприз" 2' => $baseItemsDir . 'Tort_Rozoviy_Kapriz_190x253.png',
             //            );
-            $itemDescription = 'Конфеты: "Канафета" 500г';
-            $itemPrice = 'Цена: <strong>125 грн</strong>';
+            $itemDescription = '
+            Высота:<b> 50 см</b><br/>
+            Диаметр: <b>30 см</b><br/>
+            Количество конфет:<b> 500 г</b><br/>
+            Тип конфет: <b>Шоколадные в ассортименте</b>';
+            $itemPrice = 'Цена: <strong>250 грн</strong>';
             include 'item.html';
             ?>
+
             <?php
-            $itemTitle = 'Торт<br/>"Радость олигарха"';
-            $fancyBoxItemTitle = "Торт 'Розовый каприз'";
-            $largeItemImage = $baseItemsDir . 'Tort_Rozoviy_Kapriz_190x253.png';
-            $itemImage = $baseItemsDir . 'Tort_Radost_Oligarha_190x253.png';
-            $itemDescription = 'Description';
-            $itemPrice = '125 uah';
+            $itemTitle = 'Принцесса';
+            $fancyBoxItemTitle = "Принцесса";
+            $largeItemImage = $baseItemsDir . 'IMG_9619.jpg';
+            $itemImage = $baseItemsDirSmall . '9.jpg';
+            $itemDescription = '
+            Высота:<b> 50 см</b><br/>
+            Диаметр: <b>30 см</b><br/>
+            Количество конфет:<b> 500 г</b><br/>
+            Тип конфет: <b>Шоколадные в ассортименте</b>';
+            $itemPrice = 'Цена: <strong>130 грн</strong>';
             include 'item.html';
             ?>
+
+            <?php
+            $itemTitle = 'Мальвина';
+            $fancyBoxItemTitle = "Мальвина";
+            $largeItemImage = $baseItemsDir . 'IMG_9621.jpg';
+            $itemImage = $baseItemsDirSmall . '10.jpg';
+            $itemDescription = '
+            Высота:<b> 50 см</b><br/>
+            Диаметр: <b>30 см</b><br/>
+            Количество конфет:<b> 500 г</b><br/>
+            Тип конфет: <b>Шоколадные в ассортименте</b>';
+            $itemPrice = 'Цена: <strong>120 грн</strong>';
+            include 'item.html';
+            ?>
+
+            <?php
+            $itemTitle = 'Новогодний<br/>Колокольчик';
+            $fancyBoxItemTitle = "Новогодний Колокольчик";
+            $largeItemImage = $baseItemsDir . 'IMG_9624.jpg';
+            $itemImage = $baseItemsDirSmall . '11.jpg';
+            $itemDescription = '
+            Высота:<b> 50 см</b><br/>
+            Диаметр: <b>30 см</b><br/>
+            Количество конфет:<b> 500 г</b><br/>
+            Тип конфет: <b>Шоколадные в ассортименте</b>';
+            $itemPrice = 'Цена: <strong>120 грн</strong>';
+            include 'item.html';
+            ?>
+
+            <?php
+            $itemTitle = 'Новогоднее<br/>шампанское';
+            $fancyBoxItemTitle = "Новогоднее шампанское";
+            $largeItemImage = $baseItemsDir . 'IMG_9602.jpg';
+            $itemImage = $baseItemsDirSmall . '20.jpg';
+            $itemDescription = '
+            Высота:<b> 50 см</b><br/>
+            Диаметр: <b>30 см</b><br/>
+            Количество конфет:<b> 500 г</b><br/>
+            Тип конфет: <b>Шоколадные в ассортименте</b>';
+            $itemPrice = 'Цена: <strong>80 грн</strong>';
+            include 'item.html';
+            ?>
+
+            <?php
+            $itemTitle = 'Новогодние часы';
+            $fancyBoxItemTitle = "Новогодние часы";
+            $largeItemImage = $baseItemsDir . 'IMG_9584.jpg';
+            $itemImage = $baseItemsDirSmall . '2.png';
+            $itemDescription = '
+            Высота:<b> 50 см</b><br/>
+            Диаметр: <b>30 см</b><br/>
+            Количество конфет:<b> 500 г</b><br/>
+            Тип конфет: <b>Шоколадные в ассортименте</b>';
+            $itemPrice = 'Цена: <strong>80 грн</strong>';
+            include 'item.html';
+            ?>
+
+            <?php
+            $itemTitle = 'Торт<br/>"Розовый каприз"';
+            $fancyBoxItemTitle = "Торт Розовый каприз";
+            $largeItemImage = $baseItemsDir . 'IMG_9597.jpg';
+            $itemImage = $baseItemsDirSmall . '19.png';
+            $itemDescription = '
+            Высота:<b> 50 см</b><br/>
+            Диаметр: <b>30 см</b><br/>
+            Количество конфет:<b> 500 г</b><br/>
+            Тип конфет: <b>Шоколадные в ассортименте</b>';
+            $itemPrice = 'Цена: <strong>120 грн</strong>';
+            include 'item.html';
+            ?>
+
             <?php
             $itemTitle = 'Торт<br/>"Радость олигарха"';
-            $fancyBoxItemTitle = "Торт 'Розовый каприз'";
-            $itemImage = $baseItemsDir . 'Tort_Radost_Oligarha_190x253.png';
-            $itemDescription = 'Description';
-            $itemPrice = '125 uah';
+            $fancyBoxItemTitle = "Торт Радость олигарха";
+            $largeItemImage = $baseItemsDir . 'IMG_9634_2.jpg';
+            $itemImage = $baseItemsDirSmall . '16.jpg';
+            $itemDescription = '
+            Высота:<b> 50 см</b><br/>
+            Диаметр: <b>30 см</b><br/>
+            Количество конфет:<b> 500 г</b><br/>
+            Тип конфет: <b>Шоколадные в ассортименте</b>';
+            $itemPrice = 'Цена: <strong>140 грн</strong>';
+            include 'item.html';
+            ?>
+
+            <?php
+            $itemTitle = 'Корзинка<br/>с розовыми розами';
+            $fancyBoxItemTitle = "Корзинка с розовыми розами";
+            $largeItemImage = $baseItemsDir . 'IMG_9638.jpg';
+            $itemImage = $baseItemsDirSmall . '3.png';
+            $itemDescription = '
+            Высота:<b> 50 см</b><br/>
+            Диаметр: <b>30 см</b><br/>
+            Количество конфет:<b> 500 г</b><br/>
+            Тип конфет: <b>Шоколадные в ассортименте</b>';
+            $itemPrice = 'Цена: <strong>120 грн</strong>';
+            include 'item.html';
+            ?>
+
+            <?php
+            $itemTitle = 'Корзинка с нарциссами';
+            $fancyBoxItemTitle = "Корзинка с нарциссами";
+            $largeItemImage = $baseItemsDir . 'IMG_9591.jpg';
+            $itemImage = $baseItemsDirSmall . '4.png';
+            $itemDescription = '
+            Высота:<b> 50 см</b><br/>
+            Диаметр: <b>30 см</b><br/>
+            Количество конфет:<b> 500 г</b><br/>
+            Тип конфет: <b>Шоколадные в ассортименте</b>';
+            $itemPrice = 'Цена: <strong>140 грн</strong>';
+            include 'item.html';
+            ?>
+
+            <?php
+            $itemTitle = 'Корзинка с маками';
+            $fancyBoxItemTitle = "Корзинка с маками";
+            $largeItemImage = $baseItemsDir . 'IMG_9593.jpg';
+            $itemImage = $baseItemsDirSmall . '1.png';
+            $itemDescription = '
+            Высота:<b> 50 см</b><br/>
+            Диаметр: <b>30 см</b><br/>
+            Количество конфет:<b> 500 г</b><br/>
+            Тип конфет: <b>Шоколадные в ассортименте</b>';
+            $itemPrice = 'Цена: <strong>120 грн</strong>';
+            include 'item.html';
+            ?>
+
+            <?php
+            $itemTitle = 'Корзинка с белыми и<br/>красными розами';
+            $fancyBoxItemTitle = "Корзинка с белыми и красными розами";
+            $largeItemImage = $baseItemsDir . 'IMG_9603.jpg';
+            $itemImage = $baseItemsDirSmall . '21.png';
+            $itemDescription = '
+            Высота:<b> 50 см</b><br/>
+            Диаметр: <b>30 см</b><br/>
+            Количество конфет:<b> 500 г</b><br/>
+            Тип конфет: <b>Шоколадные в ассортименте</b>';
+            $itemPrice = 'Цена: <strong>120 грн</strong>';
+            include 'item.html';
+            ?>
+
+            <?php
+            $itemTitle = 'Букет из роз';
+            $fancyBoxItemTitle = "Букет из роз";
+            $largeItemImage = $baseItemsDir . 'IMG_9586.jpg';
+            $itemImage = $baseItemsDirSmall . '7.png';
+            $itemDescription = '
+            Высота:<b> 50 см</b><br/>
+            Диаметр: <b>30 см</b><br/>
+            Количество конфет:<b> 500 г</b><br/>
+            Тип конфет: <b>Шоколадные в ассортименте</b>';
+            $itemPrice = 'Цена: <strong>120 грн</strong>';
+            include 'item.html';
+            ?>
+
+            <?php
+            $itemTitle = 'Букет из белых и<br/>красных роз';
+            $fancyBoxItemTitle = "Букет из белых и красных роз";
+            $largeItemImage = $baseItemsDir . 'IMG_9627_2.jpg';
+            $itemImage = $baseItemsDirSmall . '13.jpg';
+            $itemDescription = '
+            Высота:<b> 50 см</b><br/>
+            Диаметр: <b>30 см</b><br/>
+            Количество конфет:<b> 500 г</b><br/>
+            Тип конфет: <b>Шоколадные в ассортименте</b>';
+            $itemPrice = 'Цена: <strong>120 грн</strong>';
+            include 'item.html';
+            ?>
+
+            <?php
+            $itemTitle = 'Букет "Ассорти"';
+            $fancyBoxItemTitle = "Букет Ассорти";
+            $largeItemImage = $baseItemsDir . 'IMG_9630.jpg';
+            $itemImage = $baseItemsDirSmall . '25.jpg';
+            $itemDescription = '
+            Высота:<b> 50 см</b><br/>
+            Диаметр: <b>30 см</b><br/>
+            Количество конфет:<b> 500 г</b><br/>
+            Тип конфет: <b>Шоколадные в ассортименте</b>';
+            $itemPrice = 'Цена: <strong>120 грн</strong>';
             include 'item.html';
             ?>
         </div>
@@ -199,33 +401,33 @@ include 'tracking.html';
         return reg.test(email);
     }
 
-    function sendRequest(){
-        var emailval  = $("#orderFormEmail").val();
-        var msgval    = $("#orderFormMsg").val();
-        var telVal    = $("#orderFormPhone").val();
-        var nameVal   = $("#orderFormName").val();
+    function sendRequest() {
+        var emailval = $("#orderFormEmail").val();
+        var msgval = $("#orderFormMsg").val();
+        var telVal = $("#orderFormPhone").val();
+        var nameVal = $("#orderFormName").val();
         var mailvalid = validateEmail(emailval);
 
-        if(mailvalid == false) {
+        if (mailvalid == false) {
             $("#orderFormEmail").addClass("error");
         }
-        else if(mailvalid == true){
+        else if (mailvalid == true) {
             $("#orderFormEmail").removeClass("error");
         }
 
-        if(telVal.length == 0) {
+        if (telVal.length == 0) {
             $("#orderFormPhone").addClass("error");
         } else {
             $("#orderFormPhone").removeClass("error");
         }
 
-        if(nameVal.length == 0) {
+        if (nameVal.length == 0) {
             $("#orderFormName").addClass("error");
         } else {
             $("#orderFormName").removeClass("error");
         }
 
-        if(mailvalid == true && telVal.length > 0 && telVal.length > 0) {
+        if (mailvalid == true && telVal.length > 0 && telVal.length > 0) {
 
             $("#sendButton").replaceWith("<em>Обработка запроса...</em>");
 
@@ -233,12 +435,12 @@ include 'tracking.html';
                 type: 'POST',
                 url: 'sendmessage.php',
                 data: $("#contact").serialize(),
-                success: function(data) {
-                    if(data == "true") {
-                        window.open("http://artlavka.pp.ua/success.html","_self");
+                success: function (data) {
+                    if (data == "true") {
+                        window.open("http://artlavka.pp.ua/success.html", "_self");
                     }
                 },
-                error: function(){
+                error: function () {
                     alert('Невозможно отправить запрос! Попробуйте позже или позвоните нам!');
                 }
             });
@@ -248,18 +450,19 @@ include 'tracking.html';
 <!-- hidden inline form -->
 <div id="inlineOrderForm">
     <span id="orderFormTitle">Оформление заказа</span>
+
     <div style="clear:both"></div>
     <form id="orderForm" name="orderForm" action="#" method="post">
-        <label class="orderFormLabel" for="email">Имя</label>
-        <input type="text" id="orderFormName" name="orderFormName" class="txt">
+        <label id="nameLabel" class="orderFormLabel" for="orderFormName">Имя</label>
+        <input id="orderFormName" type="text" name="orderFormName" class="txt">
         <br>
-        <label class="orderFormLabel" for="email">E-mail</label>
-        <input type="email" id="orderFormEmail" name="orderFormEmail" class="txt">
+        <label id="emailLabel" class="orderFormLabel" for="orderFormEmail">E-mail</label>
+        <input id="orderFormEmail" type="email" name="orderFormEmail" class="txt">
         <br>
-        <label class="orderFormLabel" for="tel">Телефон</label>
-        <input type="tel" id="orderFormPhone" name="orderFormPhone" class="txt">
+        <label id="phoneLabel" class="orderFormLabel" for="orderFormPhone">Телефон</label>
+        <input id="orderFormPhone" type="tel" name="orderFormPhone" class="txt">
         <br>
-        <label for="msg" id="msgLabel">Комментарии к заказу</label>
+        <label id="msgLabel" for="orderFormMsg">Комментарии к заказу</label>
         <textarea id="orderFormMsg" name="orderFormMsg" class="txtarea"></textarea>
         <input id="productName" type="hidden" name="productName"/>
 

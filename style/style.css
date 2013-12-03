@@ -197,11 +197,11 @@ h2 {
 }
 
 .itemTitle span {
-    float: left;
+    /*float: left;*/
     display: inline-block;
     vertical-align: middle;
     line-height: normal;
-    padding-left: 20px;
+    margin-left: -190px;
 }
 
 .itemImg {
@@ -213,11 +213,13 @@ h2 {
     /*float: left;*/
     padding-left: 230px;
     line-height: 130%;
+    height: 150px;
 }
 
 .itemPrice {
     /*float: left;*/
     padding-left: 230px;
+    margin-top: 25px;
 }
 
 .buyButton {
