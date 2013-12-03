@@ -23,7 +23,6 @@ $baseItemsDir = "items/";
 ?>
 <script type="text/javascript">
     $(document).ready(function () {
-//        $('.bxslider').bxSlider();
         $('.fancybox').fancybox({
             helpers: {
                 title: {
@@ -31,11 +30,33 @@ $baseItemsDir = "items/";
                 }
             }
         });
-        $('.bxslider').bxSlider({
-            mode: 'horizontal',
-            responsive: false,
-            controls: false
+//        $('.bxslider').bxSlider();
+//        $('.bxslider').bxSlider({
+//            mode: 'horizontal',
+//            responsive: false,
+//            controls: false
+//        });
+
+        $("#orderForm").submit(function() {
+            return false;
         });
+
+        $("#sendButton").keydown(function(event) {
+
+            if(event.which == 13) {
+                sendRequest();
+                window.open("http://artlavka.pp.ua/5","_self");
+            }
+        });
+        $("#sendButton").on("click", function(){
+            sendRequest();
+        });
+
+        $(".buyButton").on("click", function(){
+            var productName = $(this).attr('name');
+            $('#productName').attr('value', productName);
+        });
+
     });
 
 </script>
@@ -172,23 +193,74 @@ $baseItemsDir = "items/";
 <?php
 include 'tracking.html';
 ?>
+<script type="text/javascript">
+    function validateEmail(email) {
+        var reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return reg.test(email);
+    }
 
+    function sendRequest(){
+        var emailval  = $("#orderFormEmail").val();
+        var msgval    = $("#orderFormMsg").val();
+        var telVal    = $("#orderFormPhone").val();
+        var nameVal   = $("#orderFormName").val();
+        var mailvalid = validateEmail(emailval);
+
+        if(mailvalid == false) {
+            $("#orderFormEmail").addClass("error");
+        }
+        else if(mailvalid == true){
+            $("#orderFormEmail").removeClass("error");
+        }
+
+        if(telVal.length == 0) {
+            $("#orderFormPhone").addClass("error");
+        } else {
+            $("#orderFormPhone").removeClass("error");
+        }
+
+        if(nameVal.length == 0) {
+            $("#orderFormName").addClass("error");
+        } else {
+            $("#orderFormName").removeClass("error");
+        }
+
+        if(mailvalid == true && telVal.length > 0 && telVal.length > 0) {
+
+            $("#sendButton").replaceWith("<em>Обработка запроса...</em>");
+
+            $.ajax({
+                type: 'POST',
+                url: 'sendmessage.php',
+                data: $("#contact").serialize(),
+                success: function(data) {
+                    if(data == "true") {
+                        window.open("http://artlavka.pp.ua/success.html","_self");
+                    }
+                },
+                error: function(){
+                    alert('Невозможно отправить запрос! Попробуйте позже или позвоните нам!');
+                }
+            });
+        }
+    }
+</script>
 <!-- hidden inline form -->
 <div id="inlineOrderForm">
     <span id="orderFormTitle">Оформление заказа</span>
     <div style="clear:both"></div>
-    <form id="contact" name="contact" action="#" method="post">
+    <form id="orderForm" name="orderForm" action="#" method="post">
         <label class="orderFormLabel" for="email">Имя</label>
-        <input type="text" id="orderFormName" name="name" class="txt">
+        <input type="text" id="orderFormName" name="orderFormName" class="txt">
         <br>
         <label class="orderFormLabel" for="email">E-mail</label>
-        <input type="email" id="orderFormEmail" name="email" class="txt">
+        <input type="email" id="orderFormEmail" name="orderFormEmail" class="txt">
         <br>
         <label class="orderFormLabel" for="tel">Телефон</label>
-        <input type="tel" id="orderFormPhone" name="tel" class="txt">
+        <input type="tel" id="orderFormPhone" name="orderFormPhone" class="txt">
         <br>
         <label for="msg" id="msgLabel">Комментарии к заказу</label>
-        <textarea id="orderFormMsg" name="msg" class="txtarea"></textarea>
+        <textarea id="orderFormMsg" name="orderFormMsg" class="txtarea"></textarea>
         <input id="productName" type="hidden" name="productName"/>
 
         <button id="sendButton">Заказать</button>

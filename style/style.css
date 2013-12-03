@@ -240,6 +240,9 @@ h2 {
     background: #fff94c none repeat scroll left top;
 }
 
+input.error, textarea.error { border-color: #973d3d; border-style: solid; background: #f0bebe; color: #a35959; }
+input.error:focus, textarea.error:focus { border-color: #973d3d; color: #a35959; }
+
 #header {
     height: 100px;
     background: transparent url(images/header.png) no-repeat scroll center top;
