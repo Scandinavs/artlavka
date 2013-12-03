@@ -4,6 +4,8 @@
 <head>
     <title>Подарки из бумаги и конфет</title>
 
+    <link rel="icon" type="image/png" href="favicon.ico">
+
     <link href="style/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
     <link href="style/style.css" rel="stylesheet" type="text/css" media="screen"/>
     <!-- bxSlider CSS file -->
