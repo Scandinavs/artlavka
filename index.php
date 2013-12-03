@@ -172,5 +172,27 @@ $baseItemsDir = "items/";
 <?php
 include 'tracking.html';
 ?>
+
+<!-- hidden inline form -->
+<div id="inlineOrderForm">
+    <span id="orderFormTitle">Оформление заказа</span>
+    <div style="clear:both"></div>
+    <form id="contact" name="contact" action="#" method="post">
+        <label class="orderFormLabel" for="email">Имя</label>
+        <input type="text" id="orderFormName" name="name" class="txt">
+        <br>
+        <label class="orderFormLabel" for="email">E-mail</label>
+        <input type="email" id="orderFormEmail" name="email" class="txt">
+        <br>
+        <label class="orderFormLabel" for="tel">Телефон</label>
+        <input type="tel" id="orderFormPhone" name="tel" class="txt">
+        <br>
+        <label for="msg" id="msgLabel">Комментарии к заказу</label>
+        <textarea id="orderFormMsg" name="msg" class="txtarea"></textarea>
+        <input id="productName" type="hidden" name="productName"/>
+
+        <button id="sendButton">Заказать</button>
+    </form>
+</div>
 </body>
 </html>
