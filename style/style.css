@@ -220,6 +220,7 @@ h2 {
     overflow: hidden;
     float: left;
     line-height: 1px;
+    width: 100%;
     padding: 0;
     background: transparent;
     margin: 1px 0 0 0;
@@ -246,7 +247,7 @@ h2 {
 }
 
 .infoBlock h2 {
-    float: left;
+    float: none;
     margin-left: 40px;
     color: #D84436;
 }
@@ -255,5 +256,20 @@ h2 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 20px;
-    color: rgb(51, 51, 51);
+    color: #333333;
+}
+
+.infoDescription {
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.goodsBackground {
+    float: left;
+    background: #ffe992;
+    border: 0px solid #000000;
+    opacity: 1;
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
 }

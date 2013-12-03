@@ -60,8 +60,7 @@
                 <div class="infoDescription">
                     <ul>
                         <li><strong>Оформить</strong> заказ можно на сайте или по телефону</li>
-                        <li>Доставка <strong>по всей </strong>территории <strong>Украины </strong>осуществляется Новой
-                            Почтой
+                        <li>Доставка <strong>по всей </strong>территории <strong>Украины </strong>осуществляется Новой Почтой
                         </li>
                     </ul>
                 </div>
@@ -69,15 +68,27 @@
             <div class="verticalDashedLine"></div>
             <div class="infoBlock" style="width: 325px">
                 <h2>Индивидуальный<br/>подход к каждому</h2>
-
+                <div class="infoDescription">
+                    <ul><li>Вы можете <strong>выбрать </strong>цветовое решение, марку конфет и форму подарка в соответствии с поводом</li>
+                        <li>Заказ выполняется в <strong>кратчайшие </strong>сроки и из самых <strong>качественных </strong>материалов</li>
+                    </ul>
+                </div>
             </div>
             <div class="verticalDashedLine"></div>
-            <div class="infoBlock">
-                <h2 style="margin-left: 20px">При заказе трёх<br/>подарков - скидка 10%!</h2>
+            <div class="infoBlock" style="width: 335px">
+                <h2 style="margin-left: 20px;">При заказе трёх<br/>подарков - скидка 10%!</h2>
+                <div class="infoDescription">
+                    <ul><li>При <strong>любом </strong>повторном заказе - <strong>скидка 5%</strong> на все изделия</li>
+                        <li>При повторном заказе в течение&nbsp; недели <strong>скидка 20%</strong> на всю продукцию</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <!--end info -->
         <div class="horizontalLine" style="margin-top: 10px;"></div>
+
+        <div class="goodsBackground">
+        </div>
 
         <div id="content">
             <h2>Lorem ipsum, Dolor sit</h2>
