@@ -350,7 +350,7 @@ $baseItemsDirSmall = "items/small/";
             Диаметр: <b>35 см</b>
             Вес конфет:<b> 500 г</b>
             Тип конфет: <b>\'Konafetto\' ф-ка \'Roshen\'</b>';
-            $itemPrice = 'Цена: <strong>120 грн</strong>';
+            $itemPrice = 'Цена: <strong>115 грн</strong>';
             include 'item.html';
             ?>
 
