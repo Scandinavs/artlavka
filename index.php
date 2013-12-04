@@ -200,6 +200,8 @@ $baseItemsDirSmall = "items/small/";
                         <li><strong>Оформить</strong> заказ можно на сайте или по телефону</li>
                         <li>Доставка <strong>по всей </strong>территории <strong>Украины </strong>
                         </li>
+                        <li>Доставка по городу <strong>Николаеву бесплатно!</strong>
+                        </li>
                     </ul>
                 </div>
             </div>
