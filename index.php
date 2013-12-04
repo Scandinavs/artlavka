@@ -187,8 +187,7 @@ $baseItemsDirSmall = "items/small/";
                 <div class="infoDescription">
                     <ul>
                         <li><strong>Оформить</strong> заказ можно на сайте или по телефону</li>
-                        <li>Доставка <strong>по всей </strong>территории <strong>Украины </strong>осуществляется Новой
-                            Почтой
+                        <li>Доставка <strong>по всей </strong>территории <strong>Украины </strong>
                         </li>
                     </ul>
                 </div>
@@ -214,8 +213,8 @@ $baseItemsDirSmall = "items/small/";
 
                 <div class="infoDescription">
                     <ul>
-                        <li>При <strong>любом </strong>повторном заказе - <strong>скидка 5%</strong> на все изделия</li>
-                        <li>При повторном заказе в течение&nbsp; недели <strong>скидка 20%</strong> на всю продукцию
+                        <li>При заказе трёх подарков к Новому Году - <strong>скидка 10%</strong></li>
+                        <li><strong>Специальное</strong> предложение оптовым заказчикам - <strong>скидка 15%</strong> на всю продукцию
                         </li>
                     </ul>
                 </div>
