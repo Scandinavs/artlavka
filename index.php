@@ -50,7 +50,7 @@ $baseItemsDirSmall = "items/small/";
                 data: $("#buyDiscountItemForm").serialize(),
                 success: function (data) {
                     if (data == "true") {
-                        window.open("http://artlavka.pp.ua/success.html", "_self");
+                        window.open("http://artlavka.pp.ua/success.php", "_self");
                     }
                 },
                 error: function () {
@@ -553,7 +553,7 @@ include 'tracking.html';
                 data: $("#orderForm").serialize(),
                 success: function (data) {
                     if (data == "true") {
-                        window.open("http://artlavka.pp.ua/success.html", "_self");
+                        window.open("http://artlavka.pp.ua/success.php", "_self");
                     }
                 },
                 error: function () {
