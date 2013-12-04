@@ -243,6 +243,10 @@ h2 {
     background: #fff94c none repeat scroll left top;
 }
 
+.buyButtonSimple {
+    background: #fdffcd;
+}
+
 input.error, textarea.error {
     border-color: #973d3d;
     border-style: solid;

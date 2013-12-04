@@ -8,7 +8,20 @@
         <!--<img src="<?php echo $itemImage; ?>" alt="<?php echo $itemImageAlt; ?>"/>-->
         <!--<?php endforeach; ?>-->
         <!--</ul>-->
-        <a class="fancybox" href="<?php echo $largeItemImage; ?>" title="<?php echo $fancyBoxItemTitle; ?>">
+        <a class="fancybox" href="<?php echo $largeItemImage; ?>" title="
+        <?php
+        echo $fancyBoxItemTitle;
+        echo '<br/>';
+        echo $fancyBoxItemDescription;
+        echo '<br/>';
+        echo 'Тип конфет можно изменить по жеданию клиента (текущая цена рассчитана для типа конфет, указанного в описании)';
+        echo '<div style=\'margin-bottom: 30px;\'>';
+        echo '<a class=\'buyButton fancybox\' href=\'#inlineOrderForm\'
+        style=\'width: 100px; float: right;\'
+        name='.$fancyBoxItemTitle.'>Купить</a>';
+        echo '</div>';
+
+        ?>">
             <img src="<?php echo $itemImage; ?>" alt="" width="190px" height="253px"/>
         </a>
     </div>
