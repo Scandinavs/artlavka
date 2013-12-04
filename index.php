@@ -130,7 +130,18 @@ $baseItemsDirSmall = "items/small/";
             $('#orderFormMsg').show();
             $('#orderFormTitle').text("Оформление заказа");
         });
-
+        $('[title]').mouseover(function () {
+            $this = $(this);
+            $this.data('title', $this.attr('title'));
+            // Using null here wouldn't work in IE, but empty string will work just fine.
+            $this.attr('title', '');
+        }).mouseout(function () {
+                $this = $(this);
+                $this.attr('title', $this.data('title'));
+            }).on("click", function () {
+                $this = $(this);
+                $this.attr('title', $this.data('title'));
+            });
     });
 
 </script>
