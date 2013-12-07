@@ -249,12 +249,10 @@ $baseItemsDirSmall = "items/small/";
             $itemDescription = '
             Высота:<b> 50 см</b><br/>
             Диаметр: <b>30 см</b><br/>
-            Вес конфет:<b> 500 г</b><br/>
             Тип конфет: <b>Шоколадные в ассортименте</b>';
             $fancyBoxItemDescription = '
             Высота:<b> 50 см</b>
             Диаметр: <b>30 см</b>
-            Вес конфет:<b> 500 г</b>
             Тип конфет: <b>Шоколадные в ассортименте</b>';
             $itemPrice = 'Цена: <strong>250 грн</strong>';
             include 'item.html';
@@ -268,12 +266,10 @@ $baseItemsDirSmall = "items/small/";
             $itemDescription = '
             Высота:<b> 25 см</b><br/>
             Диаметр: <b>-</b><br/>
-            Вес конфет:<b> 150 г</b><br/>
             Тип конфет: <b>"Amour" Ф-ка "Конти"</b>';
             $fancyBoxItemDescription = '
             Высота:<b> 25 см</b>
             Диаметр: <b>-</b>
-            Вес конфет:<b> 150 г</b>
             Тип конфет: <b>\'Amour\' Ф-ка \'Конти\'</b>';
             $itemPrice = 'Цена: <strong>130 грн</strong>';
             include 'item.html';
@@ -287,12 +283,10 @@ $baseItemsDirSmall = "items/small/";
             $itemDescription = '
             Высота:<b> 25 см</b><br/>
             Диаметр: <b>-</b><br/>
-            Вес конфет:<b> 100 г</b><br/>
             Тип конфет: <b>"Amour" Ф-ка "Конти"</b>';
             $fancyBoxItemDescription = '
             Высота:<b> 25 см</b>
             Диаметр: <b>-</b>
-            Вес конфет:<b> 100 г</b>
             Тип конфет: <b>\'Amour\' Ф-ка \'Конти\'</b>';
             $itemPrice = 'Цена: <strong>120 грн</strong>';
             include 'item.html';
@@ -306,12 +300,10 @@ $baseItemsDirSmall = "items/small/";
             $itemDescription = '
             Высота:<b> 30 см</b><br/>
             Диаметр: <b>15 см</b><br/>
-            Вес конфет:<b> 100 г</b><br/>
             Тип конфет: <b>"Фундук в шоколаде" Ф-ка "Конти"</b>';
             $fancyBoxItemDescription = '
             Высота:<b> 30 см</b>
             Диаметр: <b>15 см</b>
-            Вес конфет:<b> 100 г</b>
             Тип конфет: <b>\'Фундук в шоколаде\' Ф-ка \'Конти\'</b>';
             $itemPrice = 'Цена: <strong>120 грн</strong>';
             include 'item.html';
@@ -325,12 +317,10 @@ $baseItemsDirSmall = "items/small/";
             $itemDescription = '
             Высота:<b> 30 см</b><br/>
             Диаметр: <b>10 см</b><br/>
-            Вес конфет:<b>-</b><br/>
             Тип конфет: <b>-</b>';
             $fancyBoxItemDescription = '
             Высота:<b> 30 см</b>
             Диаметр: <b>10 см</b>
-            Вес конфет:<b>-</b>
             Тип конфет: <b>-</b>';
             $itemPrice = 'Цена: <strong>80 грн</strong>';
             include 'item.html';
@@ -344,12 +334,10 @@ $baseItemsDirSmall = "items/small/";
             $itemDescription = '
             Высота:<b>-</b><br/>
             Диаметр: <b>24 см</b><br/>
-            Вес конфет:<b> 250 г</b><br/>
             Тип конфет: <b>"Батончик"</b>';
             $fancyBoxItemDescription = '
             Высота:<b>-</b>
             Диаметр: <b>24 см</b>
-            Вес конфет:<b> 250 г</b>
             Тип конфет: <b>\'Батончик\'</b>';
             $itemPrice = 'Цена: <strong>80 грн</strong>';
             include 'item.html';
@@ -363,12 +351,10 @@ $baseItemsDirSmall = "items/small/";
             $itemDescription = '
             Высота:<b> 15 см</b><br/>
             Диаметр: <b>35 см</b><br/>
-            Вес конфет:<b> 500 г</b><br/>
             Тип конфет: <b>"Konafetto" ф-ка "Roshen"</b>';
             $fancyBoxItemDescription = '
             Высота:<b> 15 см</b>
             Диаметр: <b>35 см</b>
-            Вес конфет:<b> 500 г</b>
             Тип конфет: <b>\'Konafetto\' ф-ка \'Roshen\'</b>';
             $itemPrice = 'Цена: <strong>115 грн</strong>';
             include 'item.html';
@@ -382,12 +368,10 @@ $baseItemsDirSmall = "items/small/";
             $itemDescription = '
             Высота:<b> 32 см</b><br/>
             Диаметр: <b>30 см</b><br/>
-            Вес конфет:<b> 400 г</b><br/>
             Тип конфет: <b>Шоколадные медальки<br/>и конфеты "Basarili" ф-ка "Roshen"</b>';
             $fancyBoxItemDescription = '
             Высота:<b> 32 см</b>
             Диаметр: <b>30 см</b>
-            Вес конфет:<b> 400 г</b>
             Тип конфет: <b>Шоколадные медальки<br/>и конфеты \'Basarili\' ф-ка \'Roshen\'</b>';
             $itemPrice = 'Цена: <strong>140 грн</strong>';
             include 'item.html';
@@ -401,12 +385,10 @@ $baseItemsDirSmall = "items/small/";
             $itemDescription = '
             Высота:<b> 35 см</b><br/>
             Диаметр: <b>25 см</b><br/>
-            Вес конфет:<b> 300 г</b><br/>
             Тип конфет: <b>"Leonardo"</b>';
             $fancyBoxItemDescription = '
             Высота:<b> 35 см</b>
             Диаметр: <b>25 см</b>
-            Вес конфет:<b> 300 г</b>
             Тип конфет: <b>\'Leonardo\'</b>';
             $itemPrice = 'Цена: <strong>120 грн</strong>';
             include 'item.html';
@@ -420,12 +402,10 @@ $baseItemsDirSmall = "items/small/";
             $itemDescription = '
             Высота:<b> 35 см</b><br/>
             Диаметр: <b>25 см</b><br/>
-            Вес конфет:<b> 300 г</b><br/>
             Тип конфет: <b>Шоколадные в ассортименте ф-ки "Roshen"</b>';
             $fancyBoxItemDescription = '
             Высота:<b> 35 см</b>
             Диаметр: <b>25 см</b>
-            Вес конфет:<b> 300 г</b>
             Тип конфет: <b>Шоколадные в ассортименте ф-ки \'Roshen\'</b>';
             $itemPrice = 'Цена: <strong>140 грн</strong>';
             include 'item.html';
@@ -439,12 +419,10 @@ $baseItemsDirSmall = "items/small/";
             $itemDescription = '
             Высота:<b> 30 см</b><br/>
             Диаметр: <b>25 см</b><br/>
-            Вес конфет:<b> 300 г</b><br/>
             Тип конфет: <b>"Парижель" ф-ка "АВК"</b>';
             $fancyBoxItemDescription = '
             Высота:<b> 30 см</b>
             Диаметр: <b>25 см</b>
-            Вес конфет:<b> 300 г</b>
             Тип конфет: <b>\'Парижель\' ф-ка \'АВК\'</b>';
             $itemPrice = 'Цена: <strong>120 грн</strong>';
             include 'item.html';
@@ -458,12 +436,10 @@ $baseItemsDirSmall = "items/small/";
             $itemDescription = '
             Высота:<b> 30 см</b><br/>
             Диаметр: <b>25 см</b><br/>
-            Вес конфет:<b> 300 г</b><br/>
             Тип конфет: <b>"Трюфель" ф-ка "АВК"</b>';
             $fancyBoxItemDescription = '
             Высота:<b> 30 см</b>
             Диаметр: <b>25 см</b>
-            Вес конфет:<b> 300 г</b>
             Тип конфет: <b>\'Трюфель\' ф-ка \'АВК\'</b>';
             $itemPrice = 'Цена: <strong>120 грн</strong>';
             include 'item.html';
@@ -477,12 +453,10 @@ $baseItemsDirSmall = "items/small/";
             $itemDescription = '
             Высота:<b> 20 см</b><br/>
             Диаметр: <b>25 см</b><br/>
-            Вес конфет:<b> 300 г</b><br/>
             Тип конфет: <b>"Трюфель" ф-ка "АВК"</b>';
             $fancyBoxItemDescription = '
             Высота:<b> 20 см</b>
             Диаметр: <b>25 см</b>
-            Вес конфет:<b> 300 г</b>
             Тип конфет: <b>\'Трюфель\' ф-ка \'АВК\'</b>';
             $itemPrice = 'Цена: <strong>120 грн</strong>';
             include 'item.html';
@@ -496,12 +470,10 @@ $baseItemsDirSmall = "items/small/";
             $itemDescription = '
             Высота:<b> 30 см</b><br/>
             Диаметр: <b>25 см</b><br/>
-            Вес конфет:<b> 300 г</b><br/>
             Тип конфет: <b>"Трюфель" ф-ка "АВК"</b>';
             $fancyBoxItemDescription = '
             Высота:<b> 30 см</b>
             Диаметр: <b>25 см</b>
-            Вес конфет:<b> 300 г</b>
             Тип конфет: <b>\'Трюфель\' ф-ка \'АВК\'</b>';
             $itemPrice = 'Цена: <strong>120 грн</strong>';
             include 'item.html';
@@ -515,12 +487,10 @@ $baseItemsDirSmall = "items/small/";
             $itemDescription = '
             Высота:<b> 20 см</b><br/>
             Диаметр: <b>15 см</b><br/>
-            Вес конфет:<b> 150 г</b><br/>
             Тип конфет: <b>"Amour" ф-ка "Конти"</b>';
             $fancyBoxItemDescription = '
             Высота:<b> 20 см</b>
             Диаметр: <b>15 см</b>
-            Вес конфет:<b> 150 г</b>
             Тип конфет: <b>\'Amour\' ф-ка \'Конти\'</b>';
             $itemPrice = 'Цена: <strong>120 грн</strong>';
             include 'item.html';
