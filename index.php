@@ -160,7 +160,7 @@ $baseItemsDirSmall = "items/small/";
                         <img src="items/discount_item_2.png" width="490" height="320"/>
                     </div>
                 </div>
-                <div id="discountTitle"><h2>Скидка до 10 декабря!</h2></div>
+                <div id="discountTitle"><h2>Только сегодня!</h2></div>
             </div>
             <div id="orderDiscountItemForm" style="float: left">
                 <div id="orderDiscountItemTitle">
@@ -293,6 +293,23 @@ $baseItemsDirSmall = "items/small/";
             ?>
 
             <?php
+            $itemTitle = 'Сумочка для принцессы';
+            $fancyBoxItemTitle = "Сумочка для принцессы";
+            $largeItemImage = $baseItemsDir . 'IMG_9663_2.jpg';
+            $itemImage = $baseItemsDirSmall . 'IMG_9663_2.jpg';
+            $itemDescription = '
+            Высота:<b> 30 см</b><br/>
+            Ширина:<b> 30 см</b><br/>
+            Тип конфет: <b>"Фундук в шоколаде" Ф-ка "Конти"</b>';
+            $fancyBoxItemDescription = '
+            Высота:<b> 30 см</b>
+            Ширина:<b> 30 см</b>
+            Тип конфет: <b>\'Фундук в шоколаде\' Ф-ка \'Конти\'</b>';
+            $itemPrice = 'Цена: <strong>100 грн</strong>';
+            include 'item.html';
+            ?>
+
+            <?php
             $itemTitle = 'Новогодний<br/>Колокольчик';
             $fancyBoxItemTitle = "Новогодний Колокольчик";
             $largeItemImage = $baseItemsDir . 'IMG_9624.jpg';
@@ -344,36 +361,36 @@ $baseItemsDirSmall = "items/small/";
             ?>
 
             <?php
-            $itemTitle = 'Торт<br/>"Розовый каприз"';
-            $fancyBoxItemTitle = "Торт Розовый каприз";
-            $largeItemImage = $baseItemsDir . 'IMG_9597.jpg';
-            $itemImage = $baseItemsDirSmall . '19.png';
+            $itemTitle = 'Большая<br/>корзинка с розами';
+            $fancyBoxItemTitle = "Большая корзинка с розами";
+            $largeItemImage = $baseItemsDir . 'IMG_9657_2.jpg';
+            $itemImage = $baseItemsDirSmall . 'IMG_9657_2.jpg';
             $itemDescription = '
-            Высота:<b> 15 см</b><br/>
-            Диаметр: <b>35 см</b><br/>
-            Тип конфет: <b>"Konafetto" ф-ка "Roshen"</b>';
+            Высота:<b> 40 см</b><br/>
+            Диаметр: <b>27 см</b><br/>
+            Тип конфет: <b>"Трюфель" ф-ка "АВК"</b>';
             $fancyBoxItemDescription = '
-            Высота:<b> 15 см</b>
-            Диаметр: <b>35 см</b>
-            Тип конфет: <b>\'Konafetto\' ф-ка \'Roshen\'</b>';
-            $itemPrice = 'Цена: <strong>115 грн</strong>';
+            Высота:<b> 40 см</b>
+            Диаметр: <b>27 см</b>
+            Тип конфет: <b>\'Трюфель\' ф-ка \'АВК\'</b>';
+            $itemPrice = 'Цена: <strong>150 грн</strong>';
             include 'item.html';
             ?>
 
             <?php
-            $itemTitle = 'Торт<br/>"Радость олигарха"';
-            $fancyBoxItemTitle = "Торт Радость олигарха";
-            $largeItemImage = $baseItemsDir . 'IMG_9634_2.jpg';
-            $itemImage = $baseItemsDirSmall . '16.jpg';
+            $itemTitle = 'Букет "Ассорти"';
+            $fancyBoxItemTitle = "Букет Ассорти";
+            $largeItemImage = $baseItemsDir . 'IMG_9630.jpg';
+            $itemImage = $baseItemsDirSmall . '25.jpg';
             $itemDescription = '
-            Высота:<b> 32 см</b><br/>
-            Диаметр: <b>30 см</b><br/>
-            Тип конфет: <b>Шоколадные медальки<br/>и конфеты "Basarili" ф-ка "Roshen"</b>';
+            Высота:<b> 20 см</b><br/>
+            Диаметр: <b>15 см</b><br/>
+            Тип конфет: <b>"Amour" ф-ка "Конти"</b>';
             $fancyBoxItemDescription = '
-            Высота:<b> 32 см</b>
-            Диаметр: <b>30 см</b>
-            Тип конфет: <b>Шоколадные медальки<br/>и конфеты \'Basarili\' ф-ка \'Roshen\'</b>';
-            $itemPrice = 'Цена: <strong>140 грн</strong>';
+            Высота:<b> 20 см</b>
+            Диаметр: <b>15 см</b>
+            Тип конфет: <b>\'Amour\' ф-ка \'Конти\'</b>';
+            $itemPrice = 'Цена: <strong>120 грн</strong>';
             include 'item.html';
             ?>
 
@@ -480,19 +497,36 @@ $baseItemsDirSmall = "items/small/";
             ?>
 
             <?php
-            $itemTitle = 'Букет "Ассорти"';
-            $fancyBoxItemTitle = "Букет Ассорти";
-            $largeItemImage = $baseItemsDir . 'IMG_9630.jpg';
-            $itemImage = $baseItemsDirSmall . '25.jpg';
+            $itemTitle = 'Торт<br/>"Розовый каприз"';
+            $fancyBoxItemTitle = "Торт Розовый каприз";
+            $largeItemImage = $baseItemsDir . 'IMG_9597.jpg';
+            $itemImage = $baseItemsDirSmall . '19.png';
             $itemDescription = '
-            Высота:<b> 20 см</b><br/>
-            Диаметр: <b>15 см</b><br/>
-            Тип конфет: <b>"Amour" ф-ка "Конти"</b>';
+            Высота:<b> 15 см</b><br/>
+            Диаметр: <b>35 см</b><br/>
+            Тип конфет: <b>"Konafetto" ф-ка "Roshen"</b>';
             $fancyBoxItemDescription = '
-            Высота:<b> 20 см</b>
-            Диаметр: <b>15 см</b>
-            Тип конфет: <b>\'Amour\' ф-ка \'Конти\'</b>';
-            $itemPrice = 'Цена: <strong>120 грн</strong>';
+            Высота:<b> 15 см</b>
+            Диаметр: <b>35 см</b>
+            Тип конфет: <b>\'Konafetto\' ф-ка \'Roshen\'</b>';
+            $itemPrice = 'Цена: <strong>115 грн</strong>';
+            include 'item.html';
+            ?>
+
+            <?php
+            $itemTitle = 'Торт<br/>"Радость олигарха"';
+            $fancyBoxItemTitle = "Торт Радость олигарха";
+            $largeItemImage = $baseItemsDir . 'IMG_9634_2.jpg';
+            $itemImage = $baseItemsDirSmall . '16.jpg';
+            $itemDescription = '
+            Высота:<b> 32 см</b><br/>
+            Диаметр: <b>30 см</b><br/>
+            Тип конфет: <b>Шоколадные медальки<br/>и конфеты "Basarili" ф-ка "Roshen"</b>';
+            $fancyBoxItemDescription = '
+            Высота:<b> 32 см</b>
+            Диаметр: <b>30 см</b>
+            Тип конфет: <b>Шоколадные медальки<br/>и конфеты \'Basarili\' ф-ка \'Roshen\'</b>';
+            $itemPrice = 'Цена: <strong>140 грн</strong>';
             include 'item.html';
             ?>
         </div>
