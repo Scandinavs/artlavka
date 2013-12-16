@@ -50,9 +50,9 @@ h2 {
 }
 
 .discountItem:after {
-    background-image: url(images/115_candy_121x121.png);
-    width: 121px;
-    height: 121px;
+    background-image: url(images/169_candy_110x110.png);
+    width: 110px;
+    height: 110px;
     display: block;
     content: ' ';
     position: absolute;

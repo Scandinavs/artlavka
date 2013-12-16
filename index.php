@@ -157,7 +157,7 @@ $baseItemsDirSmall = "items/small/";
             <div>
                 <div class="discountItem">
                     <div class="percentDiscount30">
-                        <img src="items/discount_item_2.png" width="490" height="320"/>
+                        <img src="items/IMG_9630.jpg" width="490" height="320"/>
                     </div>
                 </div>
                 <div id="discountTitle"><h2>Только сегодня!</h2></div>
@@ -181,7 +181,7 @@ $baseItemsDirSmall = "items/small/";
                         <div class="formField"><input id="buyDiscountItemEmail" value="" name="buyDiscountItemEmail" type="text"></div>
                     </div>
                     <div style="width: 100%;">
-                        <a id="buyDiscountItem" class="button" name="discountOrder" style="width: 155px; float: right; margin-right: 7px" href="#">Купить сейчас!</a>
+                        <a id="buyDiscountItem" class="button" name="discountOrder" style="width: 155px; float: right; margin-right: 7px; background-color: #ceee4f;" href="#">Купить сейчас!</a>
                 </form>
                     </div>
                 </div>
@@ -193,14 +193,12 @@ $baseItemsDirSmall = "items/small/";
 
         <div id="info">
             <div class="infoBlock" style="width: 280px">
-                <h2>Доставка по<br/>всей Украине</h2>
+                <h2>Бесплатная доставка</h2>
 
                 <div class="infoDescription">
                     <ul>
+                        <li><b>Бесплатная</b> доставка <strong>по всей </strong>территории <strong>Украины </strong>
                         <li><strong>Оформить</strong> заказ можно на сайте или по телефону</li>
-                        <li>Доставка <strong>по всей </strong>территории <strong>Украины </strong>
-                        </li>
-                        <li>Доставка по городу <strong>Николаеву бесплатно!</strong>
                         </li>
                     </ul>
                 </div>
@@ -271,7 +269,7 @@ $baseItemsDirSmall = "items/small/";
             Высота:<b> 40 см</b>
             Диаметр: <b>27 см</b>
             Тип конфет: <b>\'Трюфель\' ф-ка \'АВК\'</b>';
-            $itemPrice = 'Цена: <strong>150 грн</strong>';
+            $itemPrice = 'Цена: <strong>180 грн</strong>';
             include 'item.html';
             ?>
 
@@ -288,7 +286,7 @@ $baseItemsDirSmall = "items/small/";
             Высота:<b> 20 см</b>
             Диаметр: <b>15 см</b>
             Тип конфет: <b>\'Amour\' ф-ка \'Конти\'</b>';
-            $itemPrice = 'Цена: <strong>120 грн</strong>';
+            $itemPrice = 'Цена: <strong>169 грн</strong>';
             include 'item.html';
             ?>
 
@@ -305,7 +303,7 @@ $baseItemsDirSmall = "items/small/";
             Высота:<b> 35 см</b>
             Диаметр: <b>25 см</b>
             Тип конфет: <b>\'Leonardo\'</b>';
-            $itemPrice = 'Цена: <strong>120 грн</strong>';
+            $itemPrice = 'Цена: <strong>150 грн</strong>';
             include 'item.html';
             ?>
 
@@ -322,7 +320,7 @@ $baseItemsDirSmall = "items/small/";
             Высота:<b> 35 см</b>
             Диаметр: <b>25 см</b>
             Тип конфет: <b>Шоколадные в ассортименте ф-ки \'Roshen\'</b>';
-            $itemPrice = 'Цена: <strong>140 грн</strong>';
+            $itemPrice = 'Цена: <strong>170 грн</strong>';
             include 'item.html';
             ?>
 
@@ -339,7 +337,7 @@ $baseItemsDirSmall = "items/small/";
             Высота:<b> 30 см</b>
             Диаметр: <b>25 см</b>
             Тип конфет: <b>\'Парижель\' ф-ка \'АВК\'</b>';
-            $itemPrice = 'Цена: <strong>120 грн</strong>';
+            $itemPrice = 'Цена: <strong>150 грн</strong>';
             include 'item.html';
             ?>
 
@@ -356,7 +354,7 @@ $baseItemsDirSmall = "items/small/";
             Высота:<b> 30 см</b>
             Диаметр: <b>25 см</b>
             Тип конфет: <b>\'Трюфель\' ф-ка \'АВК\'</b>';
-            $itemPrice = 'Цена: <strong>120 грн</strong>';
+            $itemPrice = 'Цена: <strong>150 грн</strong>';
             include 'item.html';
             ?>
 
@@ -373,7 +371,7 @@ $baseItemsDirSmall = "items/small/";
             Высота:<b> 20 см</b>
             Диаметр: <b>25 см</b>
             Тип конфет: <b>\'Трюфель\' ф-ка \'АВК\'</b>';
-            $itemPrice = 'Цена: <strong>120 грн</strong>';
+            $itemPrice = 'Цена: <strong>160 грн</strong>';
             include 'item.html';
             ?>
 
@@ -390,7 +388,7 @@ $baseItemsDirSmall = "items/small/";
             Высота:<b> 30 см</b>
             Диаметр: <b>25 см</b>
             Тип конфет: <b>\'Трюфель\' ф-ка \'АВК\'</b>';
-            $itemPrice = 'Цена: <strong>120 грн</strong>';
+            $itemPrice = 'Цена: <strong>140 грн</strong>';
             include 'item.html';
             ?>
 
@@ -441,7 +439,7 @@ $baseItemsDirSmall = "items/small/";
             Высота:<b> 30 см</b>
             Ширина:<b> 30 см</b>
             Тип конфет: <b>\'Фундук в шоколаде\' Ф-ка \'Конти\'</b>';
-            $itemPrice = 'Цена: <strong>100 грн</strong>';
+            $itemPrice = 'Цена: <strong>120 грн</strong>';
             include 'item.html';
             ?>
 
@@ -475,7 +473,7 @@ $baseItemsDirSmall = "items/small/";
             Высота:<b> 30 см</b>
             Диаметр: <b>10 см</b>
             Тип конфет: <b>-</b>';
-            $itemPrice = 'Цена: <strong>80 грн</strong>';
+            $itemPrice = 'Цена: <strong>100 грн</strong>';
             include 'item.html';
             ?>
 
@@ -492,7 +490,7 @@ $baseItemsDirSmall = "items/small/";
             Высота:<b>-</b>
             Диаметр: <b>24 см</b>
             Тип конфет: <b>\'Батончик\'</b>';
-            $itemPrice = 'Цена: <strong>80 грн</strong>';
+            $itemPrice = 'Цена: <strong>90 грн</strong>';
             include 'item.html';
             ?>
 
@@ -509,7 +507,7 @@ $baseItemsDirSmall = "items/small/";
             Высота:<b> 15 см</b>
             Диаметр: <b>35 см</b>
             Тип конфет: <b>\'Konafetto\' ф-ка \'Roshen\'</b>';
-            $itemPrice = 'Цена: <strong>115 грн</strong>';
+            $itemPrice = 'Цена: <strong>150 грн</strong>';
             include 'item.html';
             ?>
 
@@ -526,7 +524,7 @@ $baseItemsDirSmall = "items/small/";
             Высота:<b> 32 см</b>
             Диаметр: <b>30 см</b>
             Тип конфет: <b>Шоколадные медальки<br/>и конфеты \'Basarili\' ф-ка \'Roshen\'</b>';
-            $itemPrice = 'Цена: <strong>140 грн</strong>';
+            $itemPrice = 'Цена: <strong>150 грн</strong>';
             include 'item.html';
             ?>
         </div>
