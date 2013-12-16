@@ -164,7 +164,7 @@ $baseItemsDirSmall = "items/small/";
             </div>
             <div id="orderDiscountItemForm" style="float: left">
                 <div id="orderDiscountItemTitle">
-                    <h2>Изысканность цветов и вкус<br/>шоколада в одном подарке!</h2>
+                    <h2>Бесплатная доставка<br/>по всей Украине!</h2>
                 </div>
                 <div id="discountForm">
                 <form id="buyDiscountItemForm" name="buyDiscountItemForm" action="#" method="post">
